@@ -28,7 +28,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // Liste des boutons de la calculatrice
   final List<String> buttons = [
     '7',
     '8',
@@ -69,15 +68,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(
-                    '0',
-                    style: TextStyle(color: Colors.black, fontSize: 24),
-                    textAlign: TextAlign.right,
+                  Flexible(
+                    child: Text(
+                      '0',
+                      style: TextStyle(color: Colors.black, fontSize: 24),
+                      textAlign: TextAlign.right,
+                    ),
                   ),
-                  Text(
-                    '0',
-                    style: TextStyle(color: Colors.black, fontSize: 24),
-                    textAlign: TextAlign.right,
+                  Flexible(
+                    child: Text(
+                      '0',
+                      style: TextStyle(color: Colors.black, fontSize: 24),
+                      textAlign: TextAlign.right,
+                    ),
                   ),
                 ],
               ),
